@@ -50,6 +50,7 @@ body.vB .hero{background:var(--wine)}
 .hero h1{margin:.35em 0 .35em;font:400 clamp(2.5rem,6.6vw,5.4rem)/.95 var(--serif);letter-spacing:-.01em;max-width:16ch}
 .hero h1 i{font-style:italic;color:#d9c79a}
 .hero p.intro{margin:0;max-width:46rem;color:rgba(255,255,255,.78);font-size:clamp(1rem,1.2vw,1.1rem)}
+.hero p.fxnote{margin-top:14px;font-size:.88rem;color:rgba(255,255,255,.62);border-left:2px solid #796331;padding-left:12px}
 .hero .lab{color:rgba(255,255,255,.62)}
 
 .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);border-bottom:1px solid var(--line)}
@@ -190,7 +191,8 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
   <h1 class="a">Un plan que cierra <i>sólo si todo sale bien</i></h1>
   <h1 class="b">Si la pauta funciona, <i>así podría salir</i></h1>
   <p class="intro a">Lectura de la planilla <b>“Terrible Enfant DRE_19062026_PROSPECT”</b> que acompaña la propuesta de JET (plataforma) y Sanders (performance): proyección mensual a 36 meses de ventas, gasto, medios y resultado. Qué dice, cómo está construida, qué la sostiene y qué pasa si sus supuestos no se cumplen. <b>Apretá B</b> para ver la versión optimista.</p>
-  <p class="intro b">Mismo análisis, otra hipótesis. En la llamada, JET y Sanders dijeron que van a adaptar los números para arrancar ahora. Esta versión proyecta ese arranque con una mirada optimista: <b>el crecimiento se compra con pauta</b> — USD 2.000 por mes los primeros seis meses y USD 3.000 después, entre 5 y 8 veces lo que preveía la planilla — y la marca lo multiplica. Costos de proveedores, impuestos y CMV: los mismos de la planilla.</p>
+  <p class="intro b">Mismo análisis, otra hipótesis. En la llamada, JET y Sanders dijeron que van a adaptar los números para arrancar ahora. Esta versión proyecta ese arranque con una mirada optimista: <b>el crecimiento se compra con pauta</b> — US$ 2.000 por mes los primeros seis meses y US$ 3.000 después, entre 5 y 8 veces lo que preveía la planilla — y la marca lo multiplica. Costos de proveedores, impuestos y CMV: los mismos de la planilla.</p>
+  <p class="intro fxnote"><b>Todos los montos en dólares</b> (US$), convertidos a USD 1 = R$ 5,40, supuesto de trabajo. La planilla original está en reales.</p>
 </section>
 
 <section class="kpis" aria-label="Cifras clave">
@@ -217,7 +219,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
   </div>
   <div class="callout b">
     <span class="big">B</span>
-    <p><b>Ningún salto escrito a mano.</b> En B, cada real de venta adicional se explica por inversión en medios (pauta × retorno) y por un efecto de marca que crece con el tiempo. Vende más que la planilla, pero <b>la inversión en pauta está pagada</b>: <span data-k="mediaTot"></span> en 36 meses contra R$ 67 k de la planilla.</p>
+    <p><b>Ningún salto escrito a mano.</b> En B, cada dólar de venta adicional se explica por inversión en medios (pauta × retorno) y por un efecto de marca que crece con el tiempo. Vende más que la planilla, pero <b>la inversión en pauta está pagada</b>: <span data-k="mediaTot"></span> en 36 meses contra <span data-k="mediaA"></span> de la planilla.</p>
   </div>
   <div class="card tbl a">
     <table>
@@ -226,7 +228,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
         <tr><td>Inicio de la proyección</td><td>sep-2026</td><td>feb-2027</td><td><span class="tag">Único cambio</span></td></tr>
         <tr><td>Celdas con valores</td><td colspan="2">Idénticas en las 3 hojas (incluida la oculta)</td><td><span class="tag red">Sin actualizar</span></td></tr>
         <tr><td>Fórmulas</td><td colspan="2">Idénticas</td><td><span class="tag red">Sin actualizar</span></td></tr>
-        <tr><td>Escenario oculto “Cenário 1” (CMV 70%, ticket R$ 1.200)</td><td colspan="2">Sigue oculto; pierde todos los meses</td><td><span class="tag gold">Ver § 06</span></td></tr>
+        <tr><td>Escenario oculto “Cenário 1” (CMV 70%, ticket US$ 222)</td><td colspan="2">Sigue oculto; pierde todos los meses</td><td><span class="tag gold">Ver § 06</span></td></tr>
         <tr><td>Hoja “Dados preliminares”</td><td colspan="2">Vacía (sólo el título)</td><td><span class="tag gold">No hay supuestos documentados</span></td></tr>
       </tbody>
     </table>
@@ -236,10 +238,10 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <thead><tr><th>Elemento</th><th>A · Planilla</th><th>B · Optimista</th></tr></thead>
       <tbody>
         <tr><td>Arranque</td><td>feb-2027</td><td><b>dic-2026</b> — arrancamos ahora</td></tr>
-        <tr><td>Motor de crecimiento</td><td>Visitas y conversión escritas a mano</td><td><b>Pauta</b>: USD 2.000/mes (meses 1–6) → USD 3.000/mes (desde el mes 7)</td></tr>
-        <tr><td>Compra de medios</td><td>R$ 2.000/mes</td><td>R$ 10.800 → R$ 16.200/mes (USD 1 = R$ 5,40, supuesto)</td></tr>
+        <tr><td>Motor de crecimiento</td><td>Visitas y conversión escritas a mano</td><td><b>Pauta</b>: US$ 2.000/mes (meses 1–6) → US$ 3.000/mes (desde el mes 7)</td></tr>
+        <tr><td>Compra de medios</td><td>US$ 370/mes</td><td>US$ 2.000 → US$ 3.000/mes</td></tr>
         <tr><td>Retorno (ROAS)</td><td>7,39× sobre todo el marketing (= 27× sobre medios)</td><td>3,5× → <b>8×</b> sobre medios reales, en el mes 10</td></tr>
-        <tr><td>Venta orgánica</td><td>1.000 → 14.469 visitas, conversión 0,5% → 1%</td><td><b>Efecto marca</b>: R$ 0,40 → R$ 1,50 (mes 18) → R$ 2,00 (mes 36) de venta orgánica por cada R$ 1 de venta paga</td></tr>
+        <tr><td>Venta orgánica</td><td>1.000 → 14.469 visitas, conversión 0,5% → 1%</td><td><b>Efecto marca</b>: US$ 0,40 → US$ 1,50 (mes 18) → US$ 2,00 (mes 36) de venta orgánica por cada US$ 1 de venta paga</td></tr>
         <tr><td>Crecimiento año 3</td><td>0% — meseta desde jun-28</td><td>Sigue, por el efecto marca</td></tr>
         <tr><td>Ticket, marketplace, CMV 50%, impuestos, fees JET/Sanders</td><td colspan="2">Iguales en A y B</td></tr>
         <tr><td>Flete, embalaje, equipo, stock, setup</td><td colspan="2">Ausentes en A y B — siguen siendo la deuda del modelo (§ 08)</td></tr>
@@ -253,7 +255,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
   <header><span class="idx">02</span><h2>Cómo está construido</h2><p>Tres motores de venta, una cascada de descuentos. Valores del mes 1 al mes 21.</p></header>
   <div class="card">
     <div class="chart" id="flow"></div>
-    <p class="note a">El motor “pago” no modela tráfico ni conversión: multiplica <b>todo</b> el presupuesto de marketing (incluye SEO/infra y fotos) por un ROAS fijo. Sólo R$ 2.000 de los R$ 7.000 son compra de medios.</p>
+    <p class="note a">El motor “pago” no modela tráfico ni conversión: multiplica <b>todo</b> el presupuesto de marketing (incluye SEO/infra y fotos) por un ROAS fijo. Sólo US$ 370 de los US$ 1.296 son compra de medios.</p>
     <p class="note b">En B el motor pago es pauta real × ROAS sobre medios, y el orgánico depende del pago (efecto marca). Si la pauta no rinde, caen los dos motores a la vez: es la apuesta de esta versión.</p>
   </div>
 </section>
@@ -263,8 +265,8 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
   <header><span class="idx">03</span><h2 class="a">La curva que proponen</h2><h2 class="b">La curva optimista</h2><p>Facturación mensual por canal y resultado neto.</p></header>
   <div class="card">
     <h3>Facturación mensual por canal</h3>
-    <p class="sub a">R$ por mes · feb-27 → ene-30 · los saltos no vienen de un plan, vienen de multiplicadores escritos a mano</p>
-    <p class="sub b">R$ por mes · dic-26 → nov-29 · crecimiento continuo: pauta que rinde más y una marca que pesa más cada mes</p>
+    <p class="sub a">US$ por mes · feb-27 → ene-30 · los saltos no vienen de un plan, vienen de multiplicadores escritos a mano</p>
+    <p class="sub b">US$ por mes · dic-26 → nov-29 · crecimiento continuo: pauta que rinde más y una marca que pesa más cada mes</p>
     <div class="legend"><span><i style="background:var(--c-org)"></i><span class="a">Orgánico (tráfico propio)</span><span class="b">Orgánico (efecto marca)</span></span><span><i style="background:var(--c-paid)"></i><span class="a">Pago (marketing × ROAS)</span><span class="b">Pago (pauta × ROAS)</span></span><span><i style="background:var(--c-mp)"></i>Marketplace</span></div>
     <div class="chart" id="c-rev"></div>
   </div>
@@ -278,7 +280,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <h3>Cómo se arma un mes maduro</h3>
       <p class="sub" data-k="plSub"></p>
       <div class="tbl"><table>
-        <thead><tr><th>Concepto</th><th class="r">R$ / mes</th><th class="r">%</th></tr></thead>
+        <thead><tr><th>Concepto</th><th class="r">US$ / mes</th><th class="r">%</th></tr></thead>
         <tbody id="t-plateau"></tbody>
       </table></div>
     </div>
@@ -294,7 +296,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
   <p class="lead b">La pauta trae <b data-k="paidShare"></b> de la venta y la marca convierte eso en otro <b data-k="orgShare"></b> orgánico. Si la marca no acompaña — prensa, showroom, redes, CRM —, la pauta sola no alcanza: <b>el efecto marca es nuestro, no del proveedor</b>.</p>
   <div class="card">
     <h3>Mix de facturación, 36 meses</h3>
-    <p class="sub">R$ y % del total</p>
+    <p class="sub">US$ y % del total</p>
     <div class="chart" id="c-mix"></div>
   </div>
   <div class="card tbl">
@@ -304,10 +306,10 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
     <table class="a">
       <thead><tr><th>Supuesto</th><th>Valor en la planilla</th><th>Por qué importa</th></tr></thead>
       <tbody>
-        <tr><td>Visitas orgánicas</td><td>1.000 → ×1,5 tres meses → ×2 en sep-27 → +10%/mes → 14.469 fijo desde jun-28</td><td>×14,5 en 16 meses sin inversión que lo explique (SEO R$ 4.500/mes)</td></tr>
-        <tr><td>Conversión orgánica</td><td>0,5% → <b>1,0%</b> de golpe en dic-27</td><td>Por sí solo explica el salto de facturación de dic-27 (+R$ 74 k en un mes)</td></tr>
-        <tr><td>ROAS de marketing</td><td>5,0 → 6,5 (+30% en el mes 2) → 7,39 fijo</td><td>Aplicado sobre R$ 7.000 de “marketing”, no sobre los R$ 2.000 de medios</td></tr>
-        <tr><td>Ticket medio</td><td>R$ 1.500, +5% en mar-28 y +5% en dic-29</td><td>1 par por pedido; sin descuentos, cuotas ni mix</td></tr>
+        <tr><td>Visitas orgánicas</td><td>1.000 → ×1,5 tres meses → ×2 en sep-27 → +10%/mes → 14.469 fijo desde jun-28</td><td>×14,5 en 16 meses sin inversión que lo explique (SEO US$ 833/mes)</td></tr>
+        <tr><td>Conversión orgánica</td><td>0,5% → <b>1,0%</b> de golpe en dic-27</td><td>Por sí solo explica el salto de facturación de dic-27 (+US$ 14 k en un mes)</td></tr>
+        <tr><td>ROAS de marketing</td><td>5,0 → 6,5 (+30% en el mes 2) → 7,39 fijo</td><td>Aplicado sobre US$ 1.296 de “marketing”, no sobre los US$ 370 de medios</td></tr>
+        <tr><td>Ticket medio</td><td>US$ 278, +5% en mar-28 y +5% en dic-29</td><td>1 par por pedido; sin descuentos, cuotas ni mix</td></tr>
         <tr><td>CMV</td><td><b>50%</b> de la venta</td><td>El número que define si el plan gana o pierde (§ 06)</td></tr>
         <tr><td>Marketplace</td><td>4 pedidos/mes, +10% mensual, comisión 15%</td><td>Pequeño; comisión baja para Dafiti/ML en moda</td></tr>
         <tr><td>Crecimiento año 3</td><td>0% — todo queda fijo desde jun-28</td><td>La meseta es una decisión de la planilla, no una proyección</td></tr>
@@ -316,13 +318,13 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
     <table class="b">
       <thead><tr><th>Supuesto</th><th>Valor en B</th><th>Qué exige</th></tr></thead>
       <tbody>
-        <tr><td>Pauta</td><td>USD 2.000/mes meses 1–6 · USD 3.000/mes desde el mes 7</td><td>Presupuesto aprobado y sostenido 36 meses (<span data-k="mediaTot"></span>)</td></tr>
+        <tr><td>Pauta</td><td>US$ 2.000/mes meses 1–6 · US$ 3.000/mes desde el mes 7</td><td>Presupuesto aprobado y sostenido 36 meses (<span data-k="mediaTot"></span>)</td></tr>
         <tr><td>Tipo de cambio</td><td>USD 1 = R$ 5,40</td><td>Supuesto de trabajo; mover si cambia</td></tr>
         <tr><td>ROAS sobre medios</td><td>3,5× en el mes 1 → 8× en el mes 10, después fijo</td><td>Optimista: creatividad fuerte, catálogo y checkout funcionando desde el día 1, optimización continua</td></tr>
-        <tr><td>Efecto marca</td><td>R$ 0,40 → R$ 1,50 (mes 18) → R$ 2,00 (mes 36) orgánicos por cada R$ 1 pago</td><td>Prensa, showroom, redes y CRM que conviertan la pauta en tráfico directo y recompra</td></tr>
-        <tr><td>Ticket medio</td><td>R$ 1.500, +5% en el mes 13 y en el mes 25</td><td>Igual que la planilla</td></tr>
+        <tr><td>Efecto marca</td><td>US$ 0,40 → US$ 1,50 (mes 18) → US$ 2,00 (mes 36) orgánicos por cada US$ 1 pago</td><td>Prensa, showroom, redes y CRM que conviertan la pauta en tráfico directo y recompra</td></tr>
+        <tr><td>Ticket medio</td><td>US$ 278, +5% en el mes 13 y en el mes 25</td><td>Igual que la planilla</td></tr>
         <tr><td>CMV</td><td><b>50%</b> de la venta</td><td>Igual que la planilla — sigue siendo el número que decide (§ 06)</td></tr>
-        <tr><td>Fees</td><td>Estratégia R$ 8.000 · Infra MKT R$ 4.500 · JET 1,5% (piso R$ 2.500)</td><td>Iguales; con pauta de R$ 16 k, el fee de Sanders pasa a ser ~28% de la inversión</td></tr>
+        <tr><td>Fees</td><td>Estratégia US$ 1.481 · Infra MKT US$ 833 · JET 1,5% (piso US$ 463)</td><td>Iguales; con pauta de US$ 3.000, el fee de Sanders pasa a ser ~28% de la inversión</td></tr>
       </tbody>
     </table>
   </div>
@@ -351,31 +353,31 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <tbody id="t-cvr"></tbody>
     </table>
     <p class="note a">Referencia orientativa: el e-commerce de moda suele convertir alrededor de 1% del tráfico pago. La planilla no trae CPC, CTR, conversión ni CAC — no hay plan de medios que respalde el ROAS.</p>
-    <p class="note b">Referencia orientativa: el e-commerce de moda suele convertir alrededor de 1% del tráfico pago. En B, con un CPC cercano a R$ 2, la conversión que hace falta queda en la zona alcanzable: <b>es un funnel exigente, no imposible</b>.</p>
+    <p class="note b">Referencia orientativa: el e-commerce de moda suele convertir alrededor de 1% del tráfico pago. En B, con un CPC cercano a US$ 0,35, la conversión que hace falta queda en la zona alcanzable: <b>es un funnel exigente, no imposible</b>.</p>
   </div>
 </section>
 
 <!-- 06 -->
 <section class="sec" id="s6">
-  <header><span class="idx">06</span><h2>A dónde va cada R$ 100 vendidos</h2><p>Acumulado de 36 meses.</p></header>
+  <header><span class="idx">06</span><h2>A dónde va cada US$ 100 vendidos</h2><p>Acumulado de 36 meses.</p></header>
   <div class="card">
     <div class="chart" id="c-wf"></div>
-    <p class="note a">“Proveedores y gestión” = Estratégia Ecommerce (R$ 8.000/mes), Infra MKT [SEO y otros] (R$ 4.500/mes), Plataforma JET (1,5% con piso R$ 2.500) y Ecommerce geral (2% con piso R$ 1.000). La compra de medios es <b>menos de R$ 1 de cada R$ 100</b>.</p>
-    <p class="note b">En B la pauta pasa a ser una línea de verdad: <b data-k="mediaPer100"></b> de cada R$ 100. Proveedores y gestión siguen igual que en la planilla (Estratégia R$ 8.000, Infra MKT R$ 4.500, JET 1,5%, Ecommerce geral 2%).</p>
+    <p class="note a">“Proveedores y gestión” = Estratégia Ecommerce (US$ 1.481/mes), Infra MKT [SEO y otros] (US$ 833/mes), Plataforma JET (1,5% con piso US$ 463) y Ecommerce geral (2% con piso US$ 185). La compra de medios es <b>menos de US$ 1 de cada US$ 100</b>.</p>
+    <p class="note b">En B la pauta pasa a ser una línea de verdad: <b data-k="mediaPer100"></b> de cada US$ 100. Proveedores y gestión siguen igual que en la planilla (Estratégia US$ 1.481, Infra MKT US$ 833, JET 1,5%, Ecommerce geral 2%).</p>
   </div>
   <div class="grid2">
     <div class="card tbl">
       <h3>Gasto fijo del mes 1</h3>
       <p class="sub">Lo que se paga antes de vender</p>
       <table>
-        <thead><tr><th>Línea</th><th class="r">R$ / mes</th><th class="r">%</th></tr></thead>
+        <thead><tr><th>Línea</th><th class="r">US$ / mes</th><th class="r">%</th></tr></thead>
         <tbody id="t-fixed"></tbody>
       </table>
-      <p class="note">Los R$ 4.500 de “Infra MKT” coinciden con el fee de entrada de Sanders. Los R$ 8.000 de “Estratégia” no coinciden con ningún ítem de las propuestas (JET estratégico = R$ 6.000). A reconciliar.</p>
+      <p class="note">Los US$ 833 de “Infra MKT” coinciden con el fee de entrada de Sanders. Los US$ 1.481 de “Estratégia” no coinciden con ningún ítem de las propuestas (JET estratégico = US$ 1.111). A reconciliar.</p>
     </div>
     <div class="card">
       <h3 class="a">El escenario que no se muestra</h3><h3 class="b">La versión B con CMV 70%</h3>
-      <p class="sub a">La hoja oculta “Cenário 1”: CMV 70%, ticket R$ 1.200, atención 5%, marketplace 20%</p>
+      <p class="sub a">La hoja oculta “Cenário 1”: CMV 70%, ticket US$ 222, atención 5%, marketplace 20%</p>
       <p class="sub b">Misma pauta, mismo ROAS, mismo efecto marca — sólo cambia el costo de mercadería</p>
       <div class="chart" id="c-c1"></div>
       <p class="note a">Mismo armado de tráfico y ROAS. Con el costo de mercadería más alto, <b>no hay un solo mes positivo</b> en tres años.</p>
@@ -409,10 +411,10 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <div class="f"><label for="i-cmv">CMV (costo de mercadería) <output id="o-cmv"></output></label><input type="range" id="i-cmv" min="35" max="75" step="1"><small>Planilla y B: 50% · escenario oculto: 70%</small></div>
       <div class="f a"><label for="i-conv">Conversión orgánica desde dic-27 <output id="o-conv"></output></label><input type="range" id="i-conv" min="0.3" max="1.5" step="0.05"><small>Planilla: salta de 0,5% a 1,0%</small></div>
       <div class="f a"><label for="i-vis">Visitas en la meseta <output id="o-vis"></output></label><input type="range" id="i-vis" min="20" max="150" step="5"><small>% del crecimiento de la planilla (100% = 14.469/mes)</small></div>
-      <div class="f a"><label for="i-roas">Motor pago <output id="o-roas"></output></label><input type="range" id="i-roas" min="0" max="12" step="0.5"><small>0 = como la planilla (marketing × ROAS). 1–12 = ROAS sobre los R$ 2.000 de medios</small></div>
-      <div class="f b"><label for="i-usd">Pauta desde el mes 7 <output id="o-usd"></output></label><input type="range" id="i-usd" min="1000" max="6000" step="250"><small>Meses 1–6 = USD 2.000 (o menos si bajás esto) · USD 1 = R$ 5,40</small></div>
+      <div class="f a"><label for="i-roas">Motor pago <output id="o-roas"></output></label><input type="range" id="i-roas" min="0" max="12" step="0.5"><small>0 = como la planilla (marketing × ROAS). 1–12 = ROAS sobre los US$ 370 de medios</small></div>
+      <div class="f b"><label for="i-usd">Pauta desde el mes 7 <output id="o-usd"></output></label><input type="range" id="i-usd" min="1000" max="6000" step="250"><small>Meses 1–6 = US$ 2.000 (o menos si bajás esto)</small></div>
       <div class="f b"><label for="i-roasb">ROAS sobre medios (desde el mes 10) <output id="o-roasb"></output></label><input type="range" id="i-roasb" min="2" max="10" step="0.5"><small>B: 8× · arranca en 3,5× y sube hasta este valor</small></div>
-      <div class="f b"><label for="i-halo">Efecto marca en el mes 18 <output id="o-halo"></output></label><input type="range" id="i-halo" min="0.2" max="2.5" step="0.1"><small>R$ orgánicos por cada R$ 1 de venta paga · B: 1,5</small></div>
+      <div class="f b"><label for="i-halo">Efecto marca en el mes 18 <output id="o-halo"></output></label><input type="range" id="i-halo" min="0.2" max="2.5" step="0.1"><small>US$ orgánicos por cada US$ 1 de venta paga · B: 1,5</small></div>
       <div class="f"><label for="i-fr">Flete + embalaje <output id="o-fr"></output></label><input type="range" id="i-fr" min="0" max="8" step="0.5"><small>% de la venta · ni la planilla ni B lo incluyen</small></div>
     </div>
     <div>
@@ -424,7 +426,7 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       </div>
       <div class="card" style="margin-top:1px">
         <h3>Resultado acumulado</h3>
-        <p class="sub">R$ · línea gris = <span class="a">planilla</span><span class="b">versión B</span> · línea negra = tus supuestos</p>
+        <p class="sub">US$ · línea gris = <span class="a">planilla</span><span class="b">versión B</span> · línea negra = tus supuestos</p>
         <div class="chart" id="c-sim"></div>
       </div>
     </div>
@@ -443,10 +445,10 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <table><tbody>
         <tr><td>Flete y última milla al cliente</td><td><span class="tag red">Ausente</span></td></tr>
         <tr><td>Embalaje / caja / unboxing de lujo</td><td><span class="tag red">Ausente</span></td></tr>
-        <tr><td>Setup JET (R$ 22.400 con descuento)</td><td><span class="tag red">Ausente</span></td></tr>
+        <tr><td>Setup JET (US$ 4.148 con descuento)</td><td><span class="tag red">Ausente</span></td></tr>
         <tr><td>Equipo propio (operación, atención, contenido)</td><td><span class="tag red">Ausente</span></td></tr>
         <tr><td>Stock e importación — capital de trabajo</td><td><span class="tag red">Ausente</span></td></tr>
-        <tr><td>Producción de contenido (fotos = R$ 500/mes)</td><td><span class="tag gold">Subestimado</span></td></tr>
+        <tr><td>Producción de contenido (fotos = US$ 93/mes)</td><td><span class="tag gold">Subestimado</span></td></tr>
         <tr><td>Cambios de talle en calzado (reversa = 2%)</td><td><span class="tag gold">Subestimado</span></td></tr>
         <tr><td>Showroom / tienda física SP</td><td><span class="tag gold">Fuera de alcance</span></td></tr>
       </tbody></table>
@@ -468,9 +470,9 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
       <table><tbody>
         <tr><td>Lanzamiento en dic-26 con la tienda funcionando (build JET en curso)</td><td><span class="tag red">Riesgo de fecha</span></td></tr>
         <tr><td>ROAS 8× sostenido desde el mes 10</td><td><span class="tag gold">Exigente</span></td></tr>
-        <tr><td>CPC cerca de R$ 2 y conversión pagada cerca de 1%</td><td><span class="tag ok">Alcanzable</span></td></tr>
+        <tr><td>CPC cerca de US$ 0,35 y conversión pagada cerca de 1%</td><td><span class="tag ok">Alcanzable</span></td></tr>
         <tr><td>Efecto marca 1,5× al mes 18 (prensa, showroom, redes, CRM)</td><td><span class="tag">Depende de TE</span></td></tr>
-        <tr><td>Producción creativa continua para alimentar la pauta (hoy: fotos R$ 500/mes)</td><td><span class="tag red">Sin presupuesto</span></td></tr>
+        <tr><td>Producción creativa continua para alimentar la pauta (hoy: fotos US$ 93/mes)</td><td><span class="tag red">Sin presupuesto</span></td></tr>
         <tr><td>Presupuesto de pauta aprobado por 36 meses: <span data-k="mediaTot"></span></td><td><span class="tag">Decisión</span></td></tr>
         <tr><td>CMV por debajo de <span data-k="be"></span></td><td><span class="tag gold">A validar</span></td></tr>
       </tbody></table>
@@ -482,22 +484,22 @@ footer .wm{color:var(--paper);width:min(200px,50vw)}
 <section class="sec" id="s9">
   <header><span class="idx">09</span><h2>Lectura y próximos pasos</h2><p>Para conversar mañana.</p></header>
   <p class="lead a">La planilla no es un plan de medios ni un plan de negocio: es una <b>proyección de venta</b> que funciona si el costo de mercadería es 50%, si el tráfico propio crece catorce veces y si cada real de marketing devuelve siete. Ninguno de los tres está respaldado.</p>
-  <p class="lead b">Aun mirando con optimismo, <b>crecer con pauta cuesta</b>: B vende <b data-k="rev"></b> en 36 meses — más que la planilla — y deja <b data-k="net"></b>, menos que la planilla, porque esta vez la inversión en medios está pagada. Funciona si se cumplen tres cosas a la vez: un ROAS cerca de 8×, una marca que genere R$ 1,50 de venta orgánica por cada R$ 1 de venta paga y un CMV por debajo de <b data-k="be"></b>.</p>
+  <p class="lead b">Aun mirando con optimismo, <b>crecer con pauta cuesta</b>: B vende <b data-k="rev"></b> en 36 meses — más que la planilla — y deja <b data-k="net"></b>, menos que la planilla, porque esta vez la inversión en medios está pagada. Funciona si se cumplen tres cosas a la vez: un ROAS cerca de 8×, una marca que genere US$ 1,50 de venta orgánica por cada US$ 1 de venta paga y un CMV por debajo de <b data-k="be"></b>.</p>
   <ol class="steps a">
     <li><b>Clavar el CMV real de Brasil</b><p>Es la variable que decide. Con importación, ICMS y producción, ¿estamos por debajo de <span data-k="be"></span>? Si no, ningún proveedor cambia el resultado.</p></li>
     <li><b>Correr el DRE con supuestos propios</b><p>Base y prudente, con flete, embalaje, setup, equipo y stock. El simulador de § 07 sirve de punto de partida.</p></li>
     <li><b>Ponerle dueño y meta al tráfico propio</b><p>El 68% de la venta depende de visitas de marca. Ese motor es nuestro (PR, showroom, redes, CRM), no de JET ni de Sanders: necesita objetivos mensuales de visitas y conversión.</p></li>
-    <li><b>Pedir a JET y Sanders un plan de medios real</b><p>CPC, CTR, conversión, CAC por canal y cronograma. Y reconciliar las líneas: ¿qué son los R$ 8.000 de “Estratégia” y los R$ 4.500 de “Infra MKT”?</p></li>
-    <li><b>Separar fee de inversión</b><p>Hoy el fee de gestión (R$ 4.500) supera más de dos veces a la compra de medios (R$ 2.000). Definir primero cuánto invertir, después quién lo gestiona.</p></li>
+    <li><b>Pedir a JET y Sanders un plan de medios real</b><p>CPC, CTR, conversión, CAC por canal y cronograma. Y reconciliar las líneas: ¿qué son los US$ 1.481 de “Estratégia” y los US$ 833 de “Infra MKT”?</p></li>
+    <li><b>Separar fee de inversión</b><p>Hoy el fee de gestión (US$ 833) supera más de dos veces a la compra de medios (US$ 370). Definir primero cuánto invertir, después quién lo gestiona.</p></li>
   </ol>
   <ol class="steps b">
-    <li><b>Pedir el DRE adaptado en este formato</b><p>Pauta mensual en USD y R$, CPC, conversión y ROAS por canal y por mes. Si su versión adaptada promete más que B, que muestre de dónde sale.</p></li>
+    <li><b>Pedir el DRE adaptado en este formato</b><p>Pauta mensual en US$, CPC, conversión y ROAS por canal y por mes. Si su versión adaptada promete más que B, que muestre de dónde sale.</p></li>
     <li><b>Clavar el CMV real de Brasil</b><p>También en la mirada optimista es la variable que decide: por encima de <span data-k="be"></span>, B pierde.</p></li>
-    <li><b>Decidir el presupuesto de pauta y quién la opera</b><p>USD 2.000–3.000 por mes durante 36 meses. Con R$ 16 k de pauta, el fee de Sanders (R$ 4.500) es ~28% de la inversión: comparar contra operarla desde Comando.</p></li>
+    <li><b>Decidir el presupuesto de pauta y quién la opera</b><p>US$ 2.000–3.000 por mes durante 36 meses. Con US$ 3.000 de pauta, el fee de Sanders (US$ 833) es ~28% de la inversión: comparar contra operarla desde Comando.</p></li>
     <li><b>Hacer del efecto marca un KPI</b><p>Venta orgánica por cada real de venta paga, mes a mes. Es la meta del plan de comunicación (prensa, showroom, redes, CRM).</p></li>
-    <li><b>Checkpoint a los 90 días</b><p>Si el ROAS sobre medios no supera ~5× en los meses 3–4, volver a USD 2.000 y revisar creatividad, catálogo y checkout antes de seguir invirtiendo.</p></li>
+    <li><b>Checkpoint a los 90 días</b><p>Si el ROAS sobre medios no supera ~5× en los meses 3–4, volver a US$ 2.000 y revisar creatividad, catálogo y checkout antes de seguir invirtiendo.</p></li>
   </ol>
-  <p class="note" style="margin-top:22px">Método: valores y fórmulas extraídos de la planilla; el modelo se reconstruyó y reproduce la fila de resultado mes a mes (diferencia R$ 0). La versión B usa el mismo modelo de costos e impuestos y reemplaza sólo los motores de venta por pauta × ROAS + efecto marca; sus supuestos son nuestros, optimistas a propósito, no de JET ni de Sanders. Los totales anuales siguen la convención de la planilla (IR/CSLL calculado sobre el año). Nada de esto es una recomendación fiscal: los puntos impositivos son para validar con el contador.</p>
+  <p class="note" style="margin-top:22px">Método: valores y fórmulas extraídos de la planilla; el modelo se reconstruyó y reproduce la fila de resultado mes a mes (diferencia 0). Todos los montos se muestran en US$ a USD 1 = R$ 5,40 (supuesto); la planilla original está en reales. La versión B usa el mismo modelo de costos e impuestos y reemplaza sólo los motores de venta por pauta × ROAS + efecto marca; sus supuestos son nuestros, optimistas a propósito, no de JET ni de Sanders. Los totales anuales siguen la convención de la planilla (IR/CSLL calculado sobre el año). Nada de esto es una recomendación fiscal: los puntos impositivos son para validar con el contador.</p>
 </section>
 
 </main>
@@ -533,8 +535,9 @@ let V='A';
 const START={A:{m:1,y:27},B:{m:11,y:26}};
 const lab=i=>{const s=START[V],t=s.m+i;return MES[t%12]+'-'+(s.y+Math.floor(t/12))};
 const nf=new Intl.NumberFormat('es-AR',{maximumFractionDigits:0});
-const R=v=>(v<0?'−':'')+'R$ '+nf.format(Math.abs(Math.round(v)));
-const RK=v=>{const a=Math.abs(v),s=v<0?'−':'';return a>=1e6?s+'R$ '+(a/1e6).toLocaleString('es-AR',{maximumFractionDigits:2})+' M':s+'R$ '+(a/1e3).toLocaleString('es-AR',{maximumFractionDigits:0})+' k'};
+const FX=D.B.fx, U=v=>v/FX;
+const R=v=>(v<0?'−':'')+'US$ '+nf.format(Math.abs(Math.round(U(v))));
+const RK=v=>{const a=Math.abs(U(v)),s=v<0?'−':'';return a>=1e6?s+'US$ '+(a/1e6).toLocaleString('es-AR',{maximumFractionDigits:2})+' M':a>=1e5?s+'US$ '+(a/1e3).toLocaleString('es-AR',{maximumFractionDigits:0})+' k':s+'US$ '+(a/1e3).toLocaleString('es-AR',{maximumFractionDigits:1})+' k'};
 const P=(v,d=1)=>(v*100).toLocaleString('es-AR',{maximumFractionDigits:d,minimumFractionDigits:d})+'%';
 const X=(v,d=1)=>v.toLocaleString('es-AR',{maximumFractionDigits:d,minimumFractionDigits:d});
 const NS='http://www.w3.org/2000/svg';
@@ -608,7 +611,8 @@ function bar(s,x,y,w,h,fill,roundTop=true){
   const d=roundTop?`M${x},${y+h}V${y+r}Q${x},${y} ${x+r},${y}H${x+w-r}Q${x+w},${y} ${x+w},${y+r}V${y+h}Z`
                   :`M${x},${y}V${y+h-r}Q${x},${y+h} ${x+r},${y+h}H${x+w-r}Q${x+w},${y+h} ${x+w},${y+h-r}V${y}Z`;
   return el('path',{d,fill},s)}
-const kfmt=v=>v===0?'0':(v/1000).toLocaleString('es-AR')+' k';
+const kfmt=v=>v===0?'0':(U(v)/1000).toLocaleString('es-AR',{maximumFractionDigits:1})+' k';
+const niceU=(a,b,n)=>niceTicks(U(a),U(b),n).map(t=>t*FX);
 
 /* ---------- 02 flow ---------- */
 function drawFlow(){
@@ -623,11 +627,11 @@ function drawFlow(){
   function arrow(x1,y1,x2,y2){el('path',{d:`M${x1},${y1}L${x2},${y2}`,stroke:C.ink,'stroke-width':1.2,fill:'none','marker-end':'url(#ar)'},s)}
   const pl=BASE[20], m1=BASE[0];
   const eng=V==='A'?[
-    ['Orgánico','Visitas 1.000 → 14.469','× conversión 0,5% → 1,0%','× ticket R$ 1.500 → 1.575',`${RK(m1.org)} → ${RK(pl.org)} /mes`,C.org],
-    ['Pago','Marketing R$ 7.000 (medios 2.000)','× ROAS 5,0 → 7,39','sin tráfico ni conversión',`${RK(m1.paid)} → ${RK(pl.paid)} /mes`,C.paid],
+    ['Orgánico','Visitas 1.000 → 14.469','× conversión 0,5% → 1,0%','× ticket US$ 278 → 292',`${RK(m1.org)} → ${RK(pl.org)} /mes`,C.org],
+    ['Pago','Marketing US$ 1.296 (medios 370)','× ROAS 5,0 → 7,39','sin tráfico ni conversión',`${RK(m1.paid)} → ${RK(pl.paid)} /mes`,C.paid],
     ['Marketplace','4 → 20 pedidos/mes','+10% mensual × ticket','comisión 15%',`${RK(m1.mp)} → ${RK(pl.mp)} /mes`,C.mp]]:[
     ['Orgánico (efecto marca)','venta paga × efecto marca',`× ${X(m1.halo,1)} → ${X(pl.halo,2)}`,'prensa, showroom, redes, CRM',`${RK(m1.org)} → ${RK(pl.org)} /mes`,C.org],
-    ['Pago (pauta)',`USD ${nf.format(m1.media/D.B.fx)} → ${nf.format(pl.media/D.B.fx)} /mes`,`× ROAS ${X(m1.roas,1)} → ${X(pl.roas,1)} sobre medios`,`${RK(m1.media)} → ${RK(pl.media)} de pauta`,`${RK(m1.paid)} → ${RK(pl.paid)} /mes`,C.paid],
+    ['Pago (pauta)',`US$ ${nf.format(U(m1.media))} → ${nf.format(U(pl.media))} /mes`,`× ROAS ${X(m1.roas,1)} → ${X(pl.roas,1)} sobre medios`,`${RK(m1.media)} → ${RK(pl.media)} de pauta`,`${RK(m1.paid)} → ${RK(pl.paid)} /mes`,C.paid],
     ['Marketplace','4 → 20 pedidos/mes','+10% mensual × ticket','comisión 15%',`${RK(m1.mp)} → ${RK(pl.mp)} /mes`,C.mp]];
   const cas=[['Facturación',`${RK(m1.tot)} → ${RK(pl.tot)} /mes`],['− Impuestos 21,65%','ICMS 18% + PIS/COFINS 3,65%'],['− CMV 50%','costo de mercadería'],['− Gastos',V==='A'?'proveedores, medios, variables':'proveedores, pauta, variables'],['− IR/CSLL','3,08% de la venta si hay ganancia']];
   if(!narrow){
@@ -653,7 +657,7 @@ function drawFlow(){
 /* ---------- 03 revenue ---------- */
 function drawRev(){
   const {s,W,h}=frame('c-rev',320), L=56,T=28,B=40,Rr=8, ih=h-T-B, iw=W-L-Rr;
-  const tk=niceTicks(0,Math.max(...BASE.map(m=>m.tot))*1.12,4), max=tk[tk.length-1], y=v=>T+ih-(v/max)*ih, bw=iw/36;
+  const tk=niceU(0,Math.max(...BASE.map(m=>m.tot))*1.12,4), max=tk[tk.length-1], y=v=>T+ih-(v/max)*ih, bw=iw/36;
   yAxis(s,W-Rr,tk,y,L,kfmt);
   BASE.forEach((m,i)=>{const x=L+i*bw+1, w=Math.max(2,bw-2);let acc=0;
     [['org',C.org],['paid',C.paid],['mp',C.mp]].forEach(([k,c],j)=>{const hh=(m[k]/max)*ih;
@@ -661,12 +665,12 @@ function drawRev(){
     if(i%3===0)txt(s,x+w/2,h-B+18,lab(i),{'text-anchor':'middle','font-size':10.5});
     const hit=el('rect',{class:'hit',x:L+i*bw,y:T,width:bw,height:ih},s);
     bindTip(hit,()=>`<b>${lab(i)} · mes ${i+1}</b>${row(C.org,'Orgánico',R(m.org))}${row(C.paid,'Pago',R(m.paid))}${row(C.mp,'Marketplace',R(m.mp))}${row(null,'Total',R(m.tot))}${V==='A'?row(null,'Visitas',nf.format(m.visits)):row(null,'Pauta',R(m.media))+row(null,'ROAS medios',X(m.roas,1)+'×')}`)});
-  const ann=V==='A'?[[7,'visitas ×2'],[10,'conversión ×2'],[15,'meseta: todo fijo']]:[[6,'pauta USD 3.000'],[9,'ROAS 8×'],[17,'marca 1,5×']];
+  const ann=V==='A'?[[7,'visitas ×2'],[10,'conversión ×2'],[15,'meseta: todo fijo']]:[[6,'pauta US$ 3.000'],[9,'ROAS 8×'],[17,'marca 1,5×']];
   ann.forEach(([i,t])=>{const x=L+i*bw+bw/2, yy=y(BASE[i].tot)-8;el('line',{x1:x,x2:x,y1:yy,y2:yy-22,stroke:C.ink,'stroke-width':1},s);txt(s,x,yy-27,t,{'text-anchor':'middle','font-size':11,'font-weight':600,fill:C.ink})});
 }
 function divBars(id,vals,h,tipFn,note){
   const {s,W}=frame(id,h), L=52,T=16,B=34,Rr=6, ih=h-T-B, iw=W-L-Rr;
-  const tk=niceTicks(Math.min(-10000,...vals)*1.1,Math.max(10000,...vals)*1.1,4), mn=tk[0], mx=tk[tk.length-1], y=v=>T+(mx-v)/(mx-mn)*ih, bw=iw/36;
+  const tk=niceU(Math.min(-10000,...vals)*1.1,Math.max(10000,...vals)*1.1,4), mn=tk[0], mx=tk[tk.length-1], y=v=>T+(mx-v)/(mx-mn)*ih, bw=iw/36;
   yAxis(s,W-Rr,tk,y,L,kfmt);
   vals.forEach((v,i)=>{const x=L+i*bw+1,w=Math.max(2,bw-2);
     if(v>=0)bar(s,x,y(v),w,y(0)-y(v),C.ink,true);else bar(s,x,y(0),w,y(v)-y(0),C.neg,false);
@@ -704,26 +708,26 @@ function funnels(){
   if(V==='A'){
     document.getElementById('f-org').innerHTML=
       st(100,C.wine,nf.format(m.visits),'visitas “institucionales” / mes<br>(eran 1.000 en el mes 1)')+ar('conversión 1,0% (era 0,5% hasta nov-27)')+
-      st(70,C.org,nf.format(m.ord.org),'pedidos / mes')+ar('× ticket R$ 1.575')+st(58,'#6e2a22',RK(m.org),'venta orgánica / mes');
+      st(70,C.org,nf.format(m.ord.org),'pedidos / mes')+ar('× ticket US$ 292')+st(58,'#6e2a22',RK(m.org),'venta orgánica / mes');
     document.getElementById('f-paid').innerHTML=
-      st(100,C.wine,R(I.mkt[20]),'“marketing” / mes (SEO/infra 4.815 + medios 2.000 + fotos 500)')+ar('sólo una parte compra tráfico')+
+      st(100,C.wine,R(I.mkt[20]),`“marketing” / mes (SEO/infra ${nf.format(U(I.infra[20]))} + medios ${nf.format(U(I.media[20]))} + fotos ${nf.format(U(I.photo[20]))})`)+ar('sólo una parte compra tráfico')+
       st(66,'#5f4e26',R(m.media),'compra de medios real')+ar(`ROAS declarado 7,39× sobre marketing = ${nf.format(m.paid/m.media)}× sobre medios`)+
-      st(56,C.paid,nf.format(m.ord.paid),'pedidos / mes · ~R$ '+nf.format(m.media/m.ord.paid)+' de medios por pedido')+ar('× ticket R$ 1.575')+st(48,'#7a6424',RK(m.paid),'venta paga / mes');
+      st(56,C.paid,nf.format(m.ord.paid),'pedidos / mes · ~'+R(m.media/m.ord.paid)+' de medios por pedido')+ar('× ticket US$ 292')+st(48,'#7a6424',RK(m.paid),'venta paga / mes');
   } else {
     const clicks=m.media/CPC_B, cv=m.ord.paid/clicks;
     document.getElementById('f-paid').innerHTML=
-      st(100,C.wine,R(m.media),`pauta / mes (USD ${nf.format(m.media/D.B.fx)})`)+ar(`CPC R$ ${X(CPC_B,2)} (supuesto)`)+
+      st(100,C.wine,R(m.media),'pauta / mes')+ar(`CPC US$ ${X(U(CPC_B),2)} (supuesto)`)+
       st(78,'#5f4e26',nf.format(clicks),'clics / mes')+ar(`conversión ${P(cv,2)}`)+
-      st(60,C.paid,nf.format(m.ord.paid),`pedidos / mes · CAC en medios ~R$ ${nf.format(m.media/m.ord.paid)}`)+ar(`× ticket ${R(m.tk)} = ROAS ${X(m.roas,1)}×`)+st(52,'#7a6424',RK(m.paid),'venta paga / mes');
+      st(60,C.paid,nf.format(m.ord.paid),`pedidos / mes · CAC en medios ~${R(m.media/m.ord.paid)}`)+ar(`× ticket ${R(m.tk)} = ROAS ${X(m.roas,1)}×`)+st(52,'#7a6424',RK(m.paid),'venta paga / mes');
     document.getElementById('f-org').innerHTML=
       st(100,C.wine,RK(m.paid),'venta paga / mes')+ar(`× efecto marca ${X(m.halo,2)}`)+
       st(80,C.org,RK(m.org),'venta orgánica / mes')+ar(`÷ ticket ${R(m.tk)}`)+
       st(62,'#6e2a22',nf.format(m.ord.org),'pedidos orgánicos / mes')+ar('a 1% de conversión hacen falta')+st(52,'#5a231c',nf.format(m.ord.org/0.01),'visitas propias / mes');
   }
   const ord=m.ord.paid, med=m.media;
-  document.getElementById('t-cvr').innerHTML=[1,2,3].map(c=>{const cl=med/c, cv=ord/cl;
+  document.getElementById('t-cvr').innerHTML=[0.2,0.35,0.55].map(c=>{const cl=med/(c*FX), cv=ord/cl;
     const tag=cv>.02?'<span class="tag red">Fuera de rango</span>':cv>.012?'<span class="tag gold">Exigente</span>':'<span class="tag ok">Alcanzable</span>';
-    return `<tr><td>R$ ${c},00</td><td class="r">${nf.format(cl)}</td><td class="r"><b>${P(cv)}</b></td><td>${tag} ${X(cv/0.01,1)}× la referencia de ~1%</td></tr>`}).join('');
+    return `<tr><td>US$ ${X(c,2)}</td><td class="r">${nf.format(cl)}</td><td class="r"><b>${P(cv)}</b></td><td>${tag} ${X(cv/0.01,1)}× la referencia de ~1%</td></tr>`}).join('');
 }
 /* ---------- 06 ---------- */
 function drawWF(){
@@ -740,10 +744,10 @@ function drawWF(){
     if(i>0&&!st[2]) el('line',{x1:x1,x2:x1,y1:y-10,y2:y,stroke:C.mute,'stroke-dasharray':'2 2'},s);
     txt(s,L-10,y+bh/2+4,st[0],{'text-anchor':'end','font-size':12,fill:C.ink,'font-weight':st[2]||st[3]?600:400});
     txt(s,Math.max(x0,x1)+8,y+bh/2+4,(st[1]<0?'−':'')+X(Math.abs(st[1]),1),{'font-size':12,fill:C.ink,'font-weight':600});
-    bindTip(r,()=>`<b>${st[0]}</b>${row(null,'de cada R$ 100',X(Math.abs(st[1]),2))}${row(null,'36 meses',R(st[1]/f))}`)});
+    bindTip(r,()=>`<b>${st[0]}</b>${row(null,'de cada US$ 100',X(Math.abs(st[1]),2))}${row(null,'36 meses',R(st[1]/f))}`)});
 }
 function fixedTable(){
-  const I=D.in, m=BASE[0], rows=[['Estratégia Ecommerce',I.est[0]],['Infra MKT [SEO y otros]',I.infra[0]],['Plataforma JET (piso)',2500],['Ecommerce geral (piso)',1000],[V==='A'?'Compra de medios':'Pauta (USD 2.000)',m.media],['Fotos',I.photo[0]]];
+  const I=D.in, m=BASE[0], rows=[['Estratégia Ecommerce',I.est[0]],['Infra MKT [SEO y otros]',I.infra[0]],['Plataforma JET (piso)',2500],['Ecommerce geral (piso)',1000],[V==='A'?'Compra de medios':'Pauta (US$ 2.000)',m.media],['Fotos',I.photo[0]]];
   const tot=rows.reduce((a,r)=>a+r[1],0);
   document.getElementById('t-fixed').innerHTML=rows.map((r,i)=>`<tr${i===4?' style="background:rgba(165,134,47,.12)"':''}><td>${r[0]}</td><td class="r">${R(r[1])}</td><td class="r">${P(r[1]/tot)}</td></tr>`).join('')+`<tr class="tot"><td>Total</td><td class="r">${R(tot)}</td><td class="r">100%</td></tr>`;
 }
@@ -756,13 +760,13 @@ function drawC1(){
 /* ---------- 07 tornado ---------- */
 function drawTor(){
   const list=V==='A'?[['Planilla (escenario presentado)',{}],['Visitas crecen la mitad',{vis:.5}],['Conversión orgánica queda en 0,5%',{conv:.005}],['Flete + embalaje 4%',{frete:.04}],['ROAS 4× sobre medios reales',{roasMedia:4}],['CMV 60%',{cmv:.6}],['CMV 70% (como la hoja oculta)',{cmv:.7}],['Estrés combinado',{cmv:.6,conv:.005,roasMedia:4,frete:.04}]]
-   :[['Versión B',{}],['Pauta USD 3.000 desde el mes 1',{usd1:3000}],['Pauta USD 2.000 todo el período',{usd2:2000}],['Efecto marca 1,0× (no 1,5×)',{halo1:1}],['ROAS 6× (no 8×)',{roas1:6}],['Flete + embalaje 4%',{frete:.04}],['CMV 55%',{cmv:.55}],['CMV 60%',{cmv:.6}],['Lectura prudente (todo junto)',{roas1:5,halo1:1,cmv:.55,frete:.03}]];
+   :[['Versión B',{}],['Pauta US$ 3.000 desde el mes 1',{usd1:3000}],['Pauta US$ 2.000 todo el período',{usd2:2000}],['Efecto marca 1,0× (no 1,5×)',{halo1:1}],['ROAS 6× (no 8×)',{roas1:6}],['Flete + embalaje 4%',{frete:.04}],['CMV 55%',{cmv:.55}],['CMV 60%',{cmv:.6}],['Lectura prudente (todo junto)',{roas1:5,halo1:1,cmv:.55,frete:.03}]];
   const sc=list.map(([n,o])=>{const r=summ(run(o));return [n,r.net,r]});
   const narrow=document.getElementById('c-tor').clientWidth<640;
   const rh=narrow?50:34, h=sc.length*rh+34;const {s,W}=frame('c-tor',h);
   const vals=sc.map(x=>x[1]), span=Math.max(0,...vals)-Math.min(0,...vals);
   const L=narrow?8:250, Rr=narrow?8:10, iw=W-L-Rr, mn=Math.min(0,...vals)-span*(narrow?.22:.14), mx=Math.max(0,...vals)+span*(narrow?.22:.14), x=v=>L+(v-mn)/(mx-mn)*iw;
-  const tk=niceTicks(mn,mx,narrow?3:5).filter(t=>t>=mn&&t<=mx);
+  const tk=niceU(mn,mx,narrow?3:5).filter(t=>t>=mn&&t<=mx);
   tk.forEach(t=>{el('line',{x1:x(t),x2:x(t),y1:0,y2:h-24,stroke:t===0?C.ink:C.grid},s);txt(s,x(t),h-6,t===0?'0':RK(t),{'text-anchor':'middle','font-size':11})});
   if(!tk.includes(0))el('line',{x1:x(0),x2:x(0),y1:0,y2:h-24,stroke:C.ink},s);
   sc.forEach(([n,v,r],i)=>{const y=(narrow?20:4)+i*rh, bh=narrow?20:rh-12, x0=Math.min(x(0),x(v)), w=Math.abs(x(v)-x(0));
@@ -789,7 +793,7 @@ function sim(){
   $('o-conv').textContent=X(+inp.conv.value,2)+'%';
   $('o-vis').textContent=inp.vis.value+'% · '+nf.format(1000+(D.in.vis[20]-1000)*(+inp.vis.value/100))+'/mes';
   $('o-roas').textContent=+inp.roas.value>0?X(+inp.roas.value,1)+'× medios':'como la planilla';
-  $('o-usd').textContent='USD '+nf.format(+inp.usd.value)+' · '+RK(+inp.usd.value*D.B.fx);
+  $('o-usd').textContent='US$ '+nf.format(+inp.usd.value)+'/mes';
   $('o-roasb').textContent=X(+inp.roasb.value,1)+'×';
   $('o-halo').textContent=X(+inp.halo.value,1)+'×';
   $('o-fr').textContent=X(+inp.fr.value,1)+'%';
@@ -800,9 +804,9 @@ function sim(){
 }
 function drawSim(S){
   const {s,W,h}=frame('c-sim',280), L=60,T=16,B=34,Rr=10, ih=h-T-B, iw=W-L-Rr;
-  const all=SB.cums.concat(S.cums), tk=niceTicks(Math.min(-50000,...all),Math.max(100000,...all),4);
+  const all=SB.cums.concat(S.cums), tk=niceU(Math.min(-50000,...all),Math.max(100000,...all),4);
   const y=v=>T+(tk[tk.length-1]-v)/(tk[tk.length-1]-tk[0])*ih, x=i=>L+(i+.5)*iw/36;
-  yAxis(s,W-Rr,tk,y,L,v=>v===0?'0':RK(v).replace('R$ ',''));
+  yAxis(s,W-Rr,tk,y,L,v=>v===0?'0':RK(v).replace('US$ ',''));
   const path=a=>a.map((v,i)=>(i?'L':'M')+x(i).toFixed(1)+','+y(v).toFixed(1)).join('');
   el('path',{d:path(SB.cums),fill:'none',stroke:'#9b9b97','stroke-width':2},s);
   el('path',{d:path(S.cums),fill:'none',stroke:C.ink,'stroke-width':2},s);
@@ -823,9 +827,9 @@ function drawSim(S){
 function fillText(){
   const m=BASE[20], t=SB.t, be=SB.be;
   const K={
-    rev:RK(SB.rev), net:RK(SB.net), be:P(BE,0), mediaTot:RK(t.media),
-    paidShare:P(t.paid/SB.rev,0), orgShare:P(t.org/SB.rev,0), mediaPer100:'R$ '+X(t.media/SB.rev*100,1),
-    netSub:V==='A'?'R$ por mes · 9 meses en rojo, después ~R$ 23 k/mes estables':`R$ por mes · ${be?be-1:36} meses en rojo, después crece con la marca hasta ${RK(BASE[35].net)}/mes`,
+    rev:RK(SB.rev), net:RK(SB.net), be:P(BE,0), mediaTot:RK(t.media), mediaA:RK(summ(runA({})).t.media),
+    paidShare:P(t.paid/SB.rev,0), orgShare:P(t.org/SB.rev,0), mediaPer100:'US$ '+X(t.media/SB.rev*100,1),
+    netSub:V==='A'?'US$ por mes · 9 meses en rojo, después ~US$ 4 k/mes estables':`US$ por mes · ${be?be-1:36} meses en rojo, después crece con la marca hasta ${RK(BASE[35].net)}/mes`,
     plSub:`Mes 21 (${lab(20)})`,
     funSub:V==='A'?'Mes típico de la meseta (mes 21). Lo que la planilla dice, y lo que haría falta para que sea verdad.':`Mes 21 (${lab(20)}). Lo que la versión B supone, paso por paso.`,
     orgFunSub:`${P(m.org/m.tot,0)} de la venta del mes`, paidFunSub:`${P(m.paid/m.tot,0)} de la venta del mes`,
@@ -840,7 +844,7 @@ function fillText(){
   $('k-be1p').textContent=be?(V==='A'?'Nov-27. Después, meseta de ~7% de margen.':lab(be-1).replace(/^./,c=>c.toUpperCase())+'. Después crece con la marca.'):'';
   $('k-min').textContent=RK(SB.mn);
   $('k-org').textContent=V==='A'?P(t.org/SB.rev,0):RK(t.media);
-  $('k-orgp').textContent=V==='A'?'De la facturación depende de tráfico propio de marca.':'Pauta en 36 meses. La planilla preveía R$ 67 k.';
+  $('k-orgp').textContent=V==='A'?'De la facturación depende de tráfico propio de marca.':'Pauta en 36 meses. La planilla preveía '+RK(summ(runA({})).t.media)+'.';
   $('k-be').textContent=P(BE,0);
 }
 
